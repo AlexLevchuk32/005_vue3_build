@@ -1,9 +1,16 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-	<h1>Hello Home</h1>
-	<p>Edit me</p>
 	<div class="card__wrapper" v-for="item in items" :key="item.id">
-		<Card :name="`${item.lvl} lvl`" :title="item.title" />
+		<Card :name="`${item.lvl} lvl`" :title="item.title">
+			<!-- <template v-slot:card-header>
+				{{ item.title }}
+			</template> -->
+			<!-- <template v-slot:card-body>
+				{{ item.descr }}
+			</template> -->
+
+			{{ item.descr }}
+		</Card>
 	</div>
 </template>
 
