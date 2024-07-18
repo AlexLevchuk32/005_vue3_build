@@ -7,7 +7,7 @@ export const process = {
 // };
 
 export const app = {
-	title: 'Template',
+	title: 'Clash of Clans',
 };
 
 export const linksArray = [

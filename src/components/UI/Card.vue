@@ -11,11 +11,20 @@
 		<!-- <div class="card-body">
 			<slot name="card-body"></slot>
 		</div> -->
-		<slot></slot>
+		<div class="card-body">
+			<slot name="body"></slot>
+
+			<RouterLink v-if="link" :to="link" class="link" style="display: block; margin-top: 16px">
+				See more
+			</RouterLink>
+		</div>
+		<slot name="footer"></slot>
 	</div>
 </template>
 
 <script>
+	import { RouterLink } from 'vue-router';
+
 	export default {
 		props: {
 			name: {
@@ -29,6 +38,9 @@
 			imgUrl: {
 				type: String,
 				required: false,
+			},
+			link: {
+				type: String,
 			},
 		},
 	};
