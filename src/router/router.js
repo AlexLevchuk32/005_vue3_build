@@ -4,7 +4,6 @@ const routerHistory = createWebHistory();
 
 import HomePage from '@/pages/home.vue';
 import AboutPage from '@/pages/about.vue';
-import VacancyPage from '@/pages/vacancy.vue';
 import NotFoundPage from '@/pages/404.vue';
 import Item from '@/pages/_itemAlias.vue';
 
@@ -20,11 +19,6 @@ const router = createRouter({
 			path: '/about',
 			name: 'about',
 			component: AboutPage,
-		},
-		{
-			path: '/vacancy',
-			name: 'vacancy',
-			component: VacancyPage,
 		},
 		{
 			path: '/:itemAlias',

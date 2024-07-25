@@ -21,9 +21,4 @@ export const linksArray = [
 		alias: 'about',
 		url: '/about',
 	},
-	{
-		title: 'Vacancy',
-		alias: 'vacancy',
-		url: '/vacancy',
-	},
 ];
